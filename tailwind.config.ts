@@ -1,0 +1,81 @@
+import type { Config } from 'tailwindcss';
+
+export default {
+  content: ['./App.tsx', './src/**/*.{ts,tsx}'],
+  presets: [require('nativewind/preset')],
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          50: '#EEF2FF',
+          100: '#E0E7FF',
+          200: '#C7D2FE',
+          300: '#A5B4FC',
+          400: '#818CF8',
+          500: '#6366F1',
+          600: '#4F46E5',
+          700: '#4338CA',
+          800: '#3730A3',
+          900: '#312E81',
+        },
+        accent: {
+          50: '#FFF7ED',
+          100: '#FFEDD5',
+          200: '#FED7AA',
+          300: '#FDBA74',
+          400: '#FB923C',
+          500: '#F97316',
+          600: '#EA580C',
+          700: '#C2410C',
+          800: '#9A3412',
+          900: '#7C2D12',
+        },
+        success: {
+          50: '#ECFDF5',
+          400: '#34D399',
+          500: '#10B981',
+          600: '#059669',
+        },
+        warning: {
+          50: '#FFFBEB',
+          400: '#FBBF24',
+          500: '#F59E0B',
+        },
+        error: {
+          50: '#FEF2F2',
+          400: '#F87171',
+          500: '#EF4444',
+          600: '#DC2626',
+        },
+        neutral: {
+          0: '#FFFFFF',
+          50: '#F9FAFB',
+          100: '#F3F4F6',
+          200: '#E5E7EB',
+          300: '#D1D5DB',
+          400: '#9CA3AF',
+          500: '#6B7280',
+          600: '#4B5563',
+          700: '#374151',
+          800: '#1F2937',
+          900: '#111827',
+          950: '#030712',
+        },
+      },
+      fontFamily: {
+        'inter-regular': ['Inter_400Regular'],
+        'inter-medium': ['Inter_500Medium'],
+        'inter-semibold': ['Inter_600SemiBold'],
+        'inter-bold': ['Inter_700Bold'],
+      },
+      borderRadius: {
+        sm: '8px',
+        md: '12px',
+        lg: '16px',
+        xl: '20px',
+        '2xl': '24px',
+      },
+    },
+  },
+  plugins: [],
+} satisfies Config;
